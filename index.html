@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container content-header">
+        <h1><a href="index.html">Music Festival</a></h1>
+        <nav class="nav">
+          <a href="#lineup">Line-up</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#tickets">Tickets</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video">
+      <div class="overlay">
+        <div class="container content-video">
+          <h2>Music Festival</h2>
+          <p>May 13, NYC</p>
+        </div>
+      </div>
+      <video autoplay muted loop>
+        <source src="video/concierto.mp4" type="video/mp4" />
+        <source src="video/concierto.ogg" type="video/ogg" />
+        <source src="video/concierto.webm" type="video/webm" />
+      </video>
+    </div>
+    <section class="container festival">
+      <div class="img">
+        <picture>
+          <source srcset="build/img/imagen_vocalista.avif" type="image/avif" />
+          <source srcset="build/img/imagen_vocalista.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/imagen_vocalista.jpg"
+            alt="image"
+          />
+        </picture>
+      </div>
+      <div class="content-festival">
+        <h2>Rock Festival</h2>
+        <p class="date">May 13, NYC</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+          nisi consequuntur commodi laudantium? Inventore odio quia aliquid
+          nulla. Non ea corrupti hic tempore qui tempora. Vel totam mollitia
+          quaerat iusto.
+        </p>
+      </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+      <h3>Line-up</h3>
+
+      <p class="day">FRIDAY</p>
+
+      <div class="stage-container container">
+        <div class="stage rock bg-yellow">
+          <p class="stage-name">ROCK STAGE</p>
+
+          <ul class="calendar">
+            <li>18:00 | <span>Megadeth</span></li>
+            <li>19:30 | <span>Rammstein</span></li>
+            <li>21:00 | <span>Pantera</span></li>
+            <li>22:30 | <span>Ghost</span></li>
+          </ul>
+        </div>
+
+        <div class="stage indie bg-green">
+          <p class="stage-name">INDIE STAGE</p>
+
+          <ul class="calendar">
+            <li>18:00 | <span>Mac DeMarco</span></li>
+            <li>19:30 | <span>Cage the Elephant</span></li>
+            <li>21:00 | <span>The Neigbbourhood</span></li>
+            <li>22:30 | <span>Arctic Monkeys</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--SECOND COLUMN-->
+
+      <p class="day">SATURDAY</p>
+
+      <div class="stage-container container">
+        <div class="stage rock bg-green">
+          <p class="stage-name">ROCK STAGE</p>
+
+          <ul class="calendar">
+            <li>18:00 | <span>Metallica</span></li>
+            <li>19:30 | <span>Iron Maiden</span></li>
+            <li>21:00 | <span>Five Fingers Dead Punch</span></li>
+            <li>22:30 | <span>A Flock Of Seagulls</span></li>
+          </ul>
+        </div>
+
+        <div class="stage indie bg-yellow">
+          <p class="stage-name">INDIE STAGE</p>
+
+          <ul class="calendar">
+            <li>18:00 | <span>Tripling Rock</span></li>
+            <li>19:30 | <span>Puma Blue</span></li>
+            <li>21:00 | <span>Current Joys</span></li>
+            <li>22:30 | <span>Surf Curse</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <h3>Gallery</h3>
+
+      <ul class="gallery-images"></ul>
+    </section>
+
+    <section id="tickets" class="tickets bg-green">
+      <h3>Tickets</h3>
+
+      <div class="container content-tickets">
+        <div class="basic pass">
+          <p class="pass-name">One Day Pass</p>
+          <header class="pass-head">
+            <p>Includes</p>
+          </header>
+
+          <div class="pass-body">
+            <ul>
+              <li>Access Both Stages</li>
+              <li>Food and Drink for Free</li>
+            </ul>
+          </div>
+
+          <footer class="pass-footer">
+            <p>$100</p>
+          </footer>
+        </div>
+
+        <div class="premium pass">
+          <p class="pass-name">Two Days Pass</p>
+          <header class="pass-head">
+            <p>Includes</p>
+          </header>
+
+          <div class="pass-body">
+            <ul>
+              <li>Access Both Stages</li>
+              <li>Food and Drink for Free</li>
+              <li>Secret Gift</li>
+              <li>VIP Access</li>
+            </ul>
+          </div>
+
+          <footer class="pass-footer">
+            <p>$160</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Music Festival. <br />
+        All Rigths Reserved. <br />
+        Steevened
+      </p>
+    </footer>
+
+    <script src="build/js/gallery.js"></script>
+  </body>
+</html>
